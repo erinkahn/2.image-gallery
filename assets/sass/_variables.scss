@@ -1,0 +1,25 @@
+$text-color: #000;
+$border-color: #fff;
+
+$h1-font: 'Permanent Marker', cursive;
+$figcaption-font:'Gloria Hallelujah', cursive;
+
+%h1{
+	color: $border-color;
+	font-size: 3.5em;
+	margin: 30px;
+	text-align: center;
+	font-family: $h1-font;
+}
+
+%figcaption {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	top: 0;
+	width: 200px;
+	margin: 10px 0 0 10px;
+	padding: 10px;
+	font-size: 1.3em;
+	font-family: $figcaption-font;
+}
