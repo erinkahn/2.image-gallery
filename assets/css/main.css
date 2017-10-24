@@ -14,7 +14,8 @@ h1 {
   margin: 10px 0 0 10px;
   padding: 10px;
   font-size: 1.3em;
-  font-family: "Gloria Hallelujah", cursive; }
+  font-family: "Gloria Hallelujah", cursive;
+  box-shadow: 2px 2px 2px #000; }
 
 /*-------------------------*/
 * {
@@ -37,14 +38,34 @@ body {
   .gallery figcaption {
     transition: 0.6s ease-in-out;
     transform: translate(300%); }
-  .gallery .image {
-    position: relative;
-    margin: auto 10px;
-    overflow: hidden; }
-    .gallery .image:hover figcaption {
-      transform: scale(1) translate(28px, 29px) rotate(6deg); }
-    .gallery .image:hover img {
-      transition: .3s;
-      filter: grayscale(1); }
+
+.image {
+  position: relative;
+  margin: auto 10px;
+  overflow: hidden; }
+  .image:hover figcaption {
+    transform: scale(1) translate(28px, 29px) rotate(6deg); }
+  .image:hover img {
+    transition: .1s;
+    filter: grayscale(1); }
+  .image:hover .social img {
+    border: none;
+    transform: translateX(0); }
+
+.social {
+  right: 25px;
+  position: absolute;
+  display: flex;
+  bottom: 18px;
+  overflow: hidden; }
+  .social img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
+    transform: translateX(200px); }
+    .social img:hover {
+      opacity: 0.5; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,12 @@
-$text-color: #000;
-$border-color: #fff;
+$black: #000;
+$border-white: #fff;
+
 
 $h1-font: 'Permanent Marker', cursive;
 $figcaption-font:'Gloria Hallelujah', cursive;
 
 %h1{
-	color: $border-color;
+	color: $border-white;
 	font-size: 3.5em;
 	margin: 30px;
 	text-align: center;
@@ -22,4 +23,5 @@ $figcaption-font:'Gloria Hallelujah', cursive;
 	padding: 10px;
 	font-size: 1.3em;
 	font-family: $figcaption-font;
+	box-shadow: 2px 2px 2px $black;
 }
